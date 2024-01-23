@@ -17,4 +17,7 @@ A placeholder variable is needed for the swap. The swap places the minimum value
 of the array at the end of the sorted section of the array. The value that was at the current index is 
 moved to the index that previously held the minimum value in the unsorted array, so that no values are lost.
 
+Since the outer loop is iterating through the array as the beginning of the array is sorted, the sorted
+elements are not compared again, which optimizes the sorting process.
+
 
