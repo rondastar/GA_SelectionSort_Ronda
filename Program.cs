@@ -46,13 +46,16 @@ namespace GA_SelectionSort_Ronda
                     {
                         minIndex = j;
                     }
-                } // for
+                } // end for loop to find minimum element in unsorted array
 
                 // Swap the found minimum element with the element at the current index
                 T temporary = array[i];
                 array[i] = array[minIndex]; 
                 array[minIndex] = temporary;
-            } // for
+
+                // The minimum element in the sorted array is placed at the beginning of the unsorted section for each iteration,
+                // which is also the end of the sorted section, until the end of the array is reached and all elements are sorted.
+            } // end for loop 
         } // SelectionSort
 
         static void PrintArray<T>(T[] array)
